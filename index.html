@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Project Hiring</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2c003e, #6a0dad);
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            text-align: center;
+        }
+        .container {
+            position: relative;
+            width: 60%;
+            margin: 100px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            transform: translateY(0);
+            animation: float 3s infinite ease-in-out;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        h1 {
+            font-size: 2.5em;
+            text-shadow: 0 0 10px #fff;
+        }
+        .email-input {
+            width: 80%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .apply-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: #ff00ff;
+            color: white;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(255, 0, 255, 0.8);
+        }
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -1;
+        }
+        @keyframes move {
+            0% { transform: translateY(0) translateX(0); }
+            50% { transform: translateY(-50px) translateX(50px); }
+            100% { transform: translateY(0) translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="particles"></div>
+    <div class="container">
+        <h1>Explore a Whole New Web3 Universe</h1>
+        <p>Join our cutting-edge Web3 project and be part of the future.</p>
+        <input type="email" class="email-input" placeholder="Enter your email" />
+        <br>
+        <a href="https://www.effectiveratecpm.com/da420qgp3v?key=b461c41243f6f49df8bc967736e15159" class="apply-btn">Apply Now</a>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const particlesContainer = document.querySelector(".particles");
+            for (let i = 0; i < 50; i++) {
+                let particle = document.createElement("div");
+                particle.style.position = "absolute";
+                particle.style.width = "5px";
+                particle.style.height = "5px";
+                particle.style.background = "rgba(255, 255, 255, 0.8)";
+                particle.style.borderRadius = "50%";
+                particle.style.top = Math.random() * 100 + "vh";
+                particle.style.left = Math.random() * 100 + "vw";
+                particle.style.animation = `move ${Math.random() * 5 + 3}s infinite alternate ease-in-out`;
+                particlesContainer.appendChild(particle);
+            }
+        });
+    </script>
+</body>
+</html>
